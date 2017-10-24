@@ -11,4 +11,20 @@
         <servlet-name>HelloServlet</servlet-name>
         <url-pattern>/eetest/HelloServlet</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>HelloForm</servlet-name>
+        <servlet-class>servlet.HelloForm</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloForm</servlet-name>
+        <url-pattern>/eetest/HelloForm</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DisplayHeader</servlet-name>
+        <servlet-class>servlet.DisplayHeader</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayHeader</servlet-name>
+        <url-pattern>/eetest/DisplayHeader</url-pattern>
+    </servlet-mapping>
 </web-app>
