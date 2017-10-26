@@ -19,6 +19,14 @@
         <servlet-name>HelloForm</servlet-name>
         <url-pattern>/eetest/HelloForm</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>ReadCookies</servlet-name>
+        <servlet-class>servlet.ReadCookies</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReadCookies</servlet-name>
+        <url-pattern>/eetest/ReadCookies</url-pattern>
+    </servlet-mapping>
     <filter>
         <filter-name>LogFilter</filter-name>
         <filter-class>servlet.LogFilter</filter-class>
