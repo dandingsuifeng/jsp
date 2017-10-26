@@ -19,6 +19,18 @@
         <servlet-name>HelloForm</servlet-name>
         <url-pattern>/eetest/HelloForm</url-pattern>
     </servlet-mapping>
+    <filter>
+        <filter-name>LogFilter</filter-name>
+        <filter-class>servlet.LogFilter</filter-class>
+        <init-param>
+            <param-name>Site</param-name>
+            <param-value>google</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>LogFilter</filter-name>
+        <url-pattern>/eetest/DisplayHeader</url-pattern>
+    </filter-mapping>
     <servlet>
         <servlet-name>DisplayHeader</servlet-name>
         <servlet-class>servlet.DisplayHeader</servlet-class>
