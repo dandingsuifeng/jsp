@@ -39,4 +39,19 @@
         <servlet-name>DisplayHeader</servlet-name>
         <url-pattern>/eetest/DisplayHeader</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>ErrorHandler</servlet-name>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ErrorHandler</servlet-name>
+        <url-pattern>/eetest/ErrorHandler</url-pattern>
+    </servlet-mapping>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/eetest/ErrorHandler</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type>
+        <location>/eetest/ErrorHandler</location>
+    </error-page>
 </web-app>
